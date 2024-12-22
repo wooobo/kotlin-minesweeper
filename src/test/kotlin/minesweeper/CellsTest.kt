@@ -2,7 +2,6 @@ package minesweeper
 
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.Test
-import org.junit.jupiter.api.assertAll
 
 class CellsTest {
     @Test
@@ -23,7 +22,6 @@ class CellsTest {
 
     @Test
     fun `모든 셀이 열린것을 알수 있다`() {
-        //allNonMineCellsOpened
         val cells =
             Cells.detectCreateOf(
                 listOf(
